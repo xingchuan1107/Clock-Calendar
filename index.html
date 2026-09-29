@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>时钟 · 日历</title>
 <meta name="description" content="秒级实时时钟与全年日历，标注法定节假日、节气与纪念日，支持本地笔记">
-<meta name="theme-color" content="#f3f1ec">
+<meta name="theme-color" content="#f7f6f2">
 <!-- PWA / 添加到主屏幕 -->
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
@@ -746,6 +746,15 @@
     body{padding-bottom:64px}
     .wrap{padding-bottom:88px}
     .themebtn{right:14px;bottom:calc(74px + env(safe-area-inset-bottom,0px));width:38px;height:38px}
+    /* 时钟视图：精确占满一屏、无可滚动内容；顶部避开状态栏安全区，背景直达屏幕上沿（沉浸式） */
+    body:has(#view-clock.is-active){padding-bottom:0}
+    .wrap:has(#view-clock.is-active){padding-bottom:0}
+    #view-clock{
+      min-height:100dvh;
+      padding-top:calc(env(safe-area-inset-top,0px) + 8px);
+      padding-bottom:calc(84px + env(safe-area-inset-bottom,0px));
+    }
+    #view-clock .clock-card{padding:clamp(26px,5.5vw,44px) clamp(18px,5vw,34px) clamp(22px,4.5vw,36px)}
   }
 
   /* ---------- misc ---------- */

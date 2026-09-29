@@ -2,7 +2,7 @@
  * 策略：缓存优先（cache-first）+ 后台更新。
  * 应用是单文件静态页，无网络依赖，离线可用是核心诉求；
  * 版本号递增即可触发旧缓存清理。 */
-var CACHE = "calendar-clock-v3";
+var CACHE = "calendar-clock-v4";
 var ASSETS = [
   "./",
   "./index.html",
