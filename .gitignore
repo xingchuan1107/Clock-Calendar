@@ -1,0 +1,9 @@
+# 临时与工具产物
+_shotsrc/
+tools/_*.png
+tools/_*.html
+*.tmp
+
+# 系统文件
+Thumbs.db
+.DS_Store

@@ -1,0 +1,69 @@
+{
+  "id": "./",
+  "name": "日历时钟 · 年历笔记",
+  "short_name": "日历时钟",
+  "description": "秒级实时时钟与全年日历，标注法定节假日、节气与纪念日，支持本地笔记、待办清单与到期提醒",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "any",
+  "background_color": "#f3f1ec",
+  "theme_color": "#3d5a7d",
+  "categories": ["productivity", "utilities", "lifestyle"],
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/wide-clock.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "实时时钟：秒级刷新，显示节日倒计时与今日笔记"
+    },
+    {
+      "src": "screenshots/wide-year.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "年历视图：12 个月平铺，标注法定节假日、节气与纪念日"
+    },
+    {
+      "src": "screenshots/narrow-year.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "移动端年历：日期下方小字标注节日，支持右键/长按记笔记"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "实时时钟",
+      "short_name": "时钟",
+      "description": "查看秒级实时时钟与节日倒计时",
+      "url": "./index.html?source=pwa#clock",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "月历视图",
+      "short_name": "月历",
+      "description": "放大查看当月日程与笔记",
+      "url": "./index.html?source=pwa#month",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "年历一览",
+      "short_name": "年历",
+      "description": "平铺查看全年 12 个月",
+      "url": "./index.html?source=pwa#year",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}
